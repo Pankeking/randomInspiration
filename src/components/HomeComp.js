@@ -4,9 +4,10 @@ import {Link} from 'react-router-dom';
 function HomeComp() {
     return (
         <div>
-            <Link to='/about'>about</Link>
+            <h1>This is THE HOME</h1>
+            <Link style={{fontSize:"22px", textDecoration: "none"}} to='/about'>Go to About</Link>
 
-                This is the HomeComp
+            <p>This is the Home Component</p>
         <p style={{height: "100vh", width:"100vw", fontSize:"42px", backgroundColor:"red"}}> 
                 Welcome to the homepage
 

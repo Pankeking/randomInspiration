@@ -6,8 +6,8 @@ function AboutComp() {
         <div>
             <Link to='/home'>Home</Link>
             This is the AboutComp
-            <p style={{height: "100vh", width:"100vw", backgroundColor:"blue"}}> 
-                Full Width About
+            <p style={{height: "100vh", width:"100vw",fontSize:"42px", backgroundColor:"blue"}}> 
+                Here you can find the abouts
 
 
          </p>

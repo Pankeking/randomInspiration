@@ -6,7 +6,7 @@ import QuoteComp from "./quoteComp";
 import {Routes, Route, Link, Navigate, withRouter} from 'react-router-dom';
 
 function MainComp() {
-    const [currentColor, setColor] = useState("blue");
+    const [currentColor, setColor] = useState("green");
     return(
         <React.Fragment>
             <HomeComp  colors={currentColor} />

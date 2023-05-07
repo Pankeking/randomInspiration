@@ -68,6 +68,48 @@ const quotes = [
     {quote: "Above all, be the heroine of your life, not the victim.",
     author: "Nora Ephron"},
 
+    {quote: "Without hard work, nothing grows but weeds.",
+    author: "Gordon B. Hinckley"},
+
+    {quote: "Sell your cleverness and buy bewilderment.", 
+    author: "Rumi"},
+
+    {quote: "If people never did silly things, nothing intelligent would ever get done.",
+    author: "Ludwig Wittgenstein"},
+
+    {quote: "You only live once, but if you do it right, once is enough.", 
+    author: "Mae West"},
+
+    {quote: "Someday is not a day of the week.",
+    author: "Denise Brennan-Nelson"},
+
+    {quote: "The price of anything is the amount of life you exchange for it.",
+    author: "Henry David Thoreau"},
+
+    {quote: "By seeking and blundering we learn.",
+    author: "Johann Wolfgang von Goethe"},
+
+    {quote: "That's the thing about people who think they hate computers. What they really hate is lousy programmers.",
+    author: "Larry Niven"},
+
+    {quote: "There is only one corner of the universe you can be certain of improving, and that's your own self.",
+    author: "Aldous Huxley"},
+
+    {quote: "A life spent making mistakes is not only more honorable, but more useful than a life spent doing nothing.",
+    author: "George Bernard Shaw"},
+
+    {quote: "I fear not the man who has practiced 10,000 kicks once, but I fear the man who has practiced one kick 10,000 times.",
+    author: "Bruce Lee"},
+
+    {quote: "Forever is composed of nows.",
+    author: "Emily Dickinson"},
+
+    {quote: "Do one thing every day that scares you.",
+    author: "Eleonor Roosevelt"},
+
+    {quote: "Be not afraid of greatness. Some are born great, some achieve greatness, and others have greatness thrust upon them.",
+    author: "William Shakespeare"},
+
     {quote: "The superior man is modest in his speech, but exceeds in his actions.",
     author: "Confucius"},
 

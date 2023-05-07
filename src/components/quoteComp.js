@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
 
-export function QuoteComp({ BgColor, quoteIndex, onClick }) {
+function QuoteComp({ BgColor, onClick, quote }) {
     
     const iconStyles = {
         width:"1rem",
@@ -15,35 +15,42 @@ export function QuoteComp({ BgColor, quoteIndex, onClick }) {
         padding:"0.4rem 0.7rem",
         left: "20%"
     }
+    const backgroundStyle = {backgroundColor: BgColor}
+
     
-    let twitterLink = "https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=%22" + quotes[quoteIndex].quote +"%22 "+quotes[quoteIndex].author;
-    let tumblrLink = "https://www.tumblr.com/widgets/share/tool?posttype=quote&tags=quotes,freecodecamp&caption=" + quotes[quoteIndex].quote +"&content="+quotes[quoteIndex].author + "&canonicalUrl=https%3A%2F%2Fwww.tumblr.com%2Fbuttons&shareSource=tumblr_share_button";
+
+    const currentQuote = quote.quote;
+    const currentAuthor = quote.author;
+    
+    let twitterLink = "https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=%22" + currentQuote +"%22 "+  currentAuthor;
+    let tumblrLink = "https://www.tumblr.com/widgets/share/tool?posttype=quote&tags=quotes,freecodecamp&caption=" + currentQuote +"&content="+ currentAuthor + "&canonicalUrl=https%3A%2F%2Fwww.tumblr.com%2Fbuttons&shareSource=tumblr_share_button";
     return (
         <div className="d-flex flex-wrap align-self-center justify-content-center">
             <div id="quote-box" className="quote px-1 pt-4 m-1" style={{color: BgColor, textAlign: "center"}}>
                 <div className="text-wrap w-auto px-3 fs-6 text-center">
                     <p>
                         <FontAwesomeIcon icon={faQuoteLeft} /> 
-                        <span id="text" className='fw-bold h-auto lh-1'> {quotes[quoteIndex].quote} </span>            
+                        <span id="text" className='fw-bold h-auto lh-1'> {currentQuote} </span>            
                     </p>
-                    <p id="author" className="ps-2 fs-6 fst-italic text-end" >- {quotes[quoteIndex].author}</p>
+                    <p id="author" className="ps-2 fs-6 fst-italic text-end" >- {currentAuthor}</p>
                 </div>
                 <div className="m-auto d-flex">
-                    <a className="social-link align-items-start ms-4 m-1 p-1 btn" target="_blank" rel="noreferrer" href={twitterLink} style={{backgroundColor: BgColor}}>
+                    <a className="social-link align-items-start ms-4 m-1 p-1 btn" target="_blank" rel="noreferrer" href={twitterLink} style={backgroundStyle}>
                         <FontAwesomeIcon icon={faTwitter} style={iconStyles} />
                     </a>
-                    <a className="social-link align-items-start me-auto  m-1 p-1 btn" target="_blank" rel="noreferrer" href={tumblrLink} style={{backgroundColor: BgColor}}>
+                    <a className="social-link align-items-start me-auto  m-1 p-1 btn" target="_blank" rel="noreferrer" href={tumblrLink} style={backgroundStyle}>
                         <FontAwesomeIcon icon={faTumblr} style={iconStyles} />
                     </a>
-                    <button type="button" id="new-quote" className="text-light fs-6 m-auto align-items-end btn" onClick={onClick} style={{backgroundColor: BgColor}}><span className='text'>New Quote</span></button>
+                    <button type="button" id="new-quote" className="text-light fs-6 m-auto align-items-end btn" onClick={onClick} style={backgroundStyle}><span className='text'>New Quote</span></button>
                 </div>
                 <a className="credits text-light btn" href="https://github.com/Pankeking">by Pankeking</a>
             </div>
         </div>
     )
 }
+export default QuoteComp;
 
-export const quotes = [
+/* export const quotes = [
     {quote: "Believe you can and you're halfway there.", 
     author: "Theodore Roosevelt"},
 
@@ -266,9 +273,4 @@ export const quotes = [
     {quote: "Don't wait. The time will never be just right.", 
     author: "Napoleon Hill" }
 
-
-
-
-
-    
-  ];
+  ]; */

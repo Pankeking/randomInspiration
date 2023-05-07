@@ -33,7 +33,7 @@ function QuoteComp({ BgColor, onClick, quote }) {
                     <p id="author" className="ps-2 fs-6 fst-italic notranslate text-end" >- {currentAuthor}</p>
                 </div>
                 <div className="m-auto d-flex">
-                    <a className="social-link align-items-start ms-4 m-1 p-1 btn" target="_blank" rel="noreferrer" href={twitterLink} style={backgroundStyle}>
+                    <a id="tweet-quote" className="social-link align-items-start ms-4 m-1 p-1 btn" target="_blank" rel="noreferrer" href={twitterLink} style={backgroundStyle}>
                         <FontAwesomeIcon icon={faTwitter} style={iconStyles} />
                     </a>
                     <a className="social-link align-items-start me-auto  m-1 p-1 btn" target="_blank" rel="noreferrer" href={tumblrLink} style={backgroundStyle}>

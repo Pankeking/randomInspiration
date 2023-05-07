@@ -4,9 +4,9 @@ import QuoteComp from "./quoteComp";
 
 
 
-function HomeComp({ colors }) {
+function HomeComp({ BgColor }) {
     return (
-        <div style={{height:"100vh", backgroundColor: colors}}>
+        <div style={{height:"100vh", backgroundColor: BgColor}}>
         </div>
         
     )

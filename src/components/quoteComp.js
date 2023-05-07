@@ -1,33 +1,44 @@
 import React from 'react';
 import "./quote.css";
-import { faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faTwitter, faTumblr } from "@fortawesome/free-brands-svg-icons";
 import { faQuoteRight, faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
-const authorStyles = {
-    fontSize: "1.3rem",
-    fontFamily: "copperplate"
-}
 
-function QuoteComp({ colors }) {
+
+function QuoteComp({ BgColor, quoteIndex, onClick }) {
+    
+    const anchorStyles = {
+       backgroundColor: BgColor
+        
+    }
+    const iconStyles = {
+        width:"1rem",
+        height:"1rem",
+        padding:"0.4rem 0.7rem",
+        left: "20%"
+    }
+    
+    let twitterLink = "https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=%22" + quotes[13].quote +"%22 "+quotes[13].author;
+    let tumblrLink = "https://www.tumblr.com/widgets/share/tool?posttype=quote&tags=quotes,freecodecamp&caption=" + quotes[13].quote +"&content="+quotes[13].author + "&canonicalUrl=https%3A%2F%2Fwww.tumblr.com%2Fbuttons&shareSource=tumblr_share_button";
     return (
-        <div className="quote" style={{color: colors, textAlign: "center"}}>
+        <div id="quote-box" className="quote" style={{color: BgColor, textAlign: "center"}}>
             <div>
                 <p>
                     <FontAwesomeIcon icon={faQuoteLeft} /> 
-                    <span> {quotes[23].quote} </span>
-                    <FontAwesomeIcon icon={faQuoteRight} />
+                    <span id="text"> {quotes[13].quote} </span>            
                 </p>
-                <p style={authorStyles} >- {quotes[23].author}</p>
+                <p id="author" className="author" >- {quotes[13].author}</p>
             </div>
             <div>
-                <button style={{backgroundColor:colors, border:"none"}}>
-                    <FontAwesomeIcon icon={faTwitter} style={{color:"white",width:"1rem",height:"1rem", padding:"0.3rem"}} />
-                </button>
-                <button style={{backgroundColor:colors, border:"none"}}>
-                    <FontAwesomeIcon icon={faTwitter} style={{color:"white",width:"1rem",height:"1rem", padding:"0.3rem"}} />
-                </button>
+                <a target="_blank" href={twitterLink} style={{backgroundColor: BgColor}}>
+                    <FontAwesomeIcon icon={faTwitter} style={iconStyles} />
+                </a>
+                <a target="_blank" href={tumblrLink} style={{backgroundColor: BgColor}}>
+                    <FontAwesomeIcon icon={faTumblr} style={iconStyles} />
+                </a>
+                <button id="new-quote" onClick={onClick} style={{backgroundColor: BgColor}}>New Quote</button>
             </div>
         </div>
     )

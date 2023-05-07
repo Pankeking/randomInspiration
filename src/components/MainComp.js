@@ -6,11 +6,24 @@ import QuoteComp from "./quoteComp";
 import {Routes, Route, Link, Navigate, withRouter} from 'react-router-dom';
 
 function MainComp() {
-    const [currentColor, setColor] = useState("green");
+ 
+    const randomColor = '#'+(0x1000000+(Math.random())*0xffffff).toString(16).substr(1,6);
+    const randomIndex = Math.random() * 60;
+    const [BgColor, setBgColor] = useState(randomColor);
+    const [quoteIndex, setQuoteIndex] = useState(randomIndex)
+    
+
+    function handleClick() {
+        const randomColor = '#'+(0x1000000+(Math.random())*0xffffff).toString(16).substr(1,6);
+        const randomIndex = Math.random() * 60;
+        setQuoteIndex(randomIndex);
+        setBgColor(randomColor);
+    }
+
     return(
         <React.Fragment>
-            <HomeComp  colors={currentColor} />
-            <QuoteComp colors={currentColor} />
+            <HomeComp  BgColor={BgColor} />
+            <QuoteComp BgColor={BgColor} onClick={handleClick} quoteIndex={quoteIndex} />
         </React.Fragment>
     )
 }

@@ -19,25 +19,26 @@ export function QuoteComp({ BgColor, quoteIndex, onClick }) {
     let twitterLink = "https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=%22" + quotes[quoteIndex].quote +"%22 "+quotes[quoteIndex].author;
     let tumblrLink = "https://www.tumblr.com/widgets/share/tool?posttype=quote&tags=quotes,freecodecamp&caption=" + quotes[quoteIndex].quote +"&content="+quotes[quoteIndex].author + "&canonicalUrl=https%3A%2F%2Fwww.tumblr.com%2Fbuttons&shareSource=tumblr_share_button";
     return (
-        <div id="quote-box" className="quote" style={{color: BgColor, textAlign: "center"}}>
-            <div>
-                <p>
-                    <FontAwesomeIcon icon={faQuoteLeft} /> 
-                    <span id="text"> {quotes[quoteIndex].quote} </span>            
-                </p>
-                <p id="author" className="author" >- {quotes[quoteIndex].author}</p>
+        <div className="d-flex flex-wrap align-self-center justify-content-center">
+            <div id="quote-box" className="quote px-1 pt-4 m-1" style={{color: BgColor, textAlign: "center"}}>
+                <div className="text-wrap w-auto px-3 fs-6 text-center">
+                    <p>
+                        <FontAwesomeIcon icon={faQuoteLeft} /> 
+                        <span id="text" className='fw-bold h-auto lh-1'> {quotes[quoteIndex].quote} </span>            
+                    </p>
+                    <p id="author" className="ps-2 fs-6 fst-italic text-end" >- {quotes[quoteIndex].author}</p>
+                </div>
+                <div className="m-auto d-flex">
+                    <a className="social-link align-items-start ms-4 m-1 p-1 btn" target="_blank" rel="noreferrer" href={twitterLink} style={{backgroundColor: BgColor}}>
+                        <FontAwesomeIcon icon={faTwitter} style={iconStyles} />
+                    </a>
+                    <a className="social-link align-items-start me-auto  m-1 p-1 btn" target="_blank" rel="noreferrer" href={tumblrLink} style={{backgroundColor: BgColor}}>
+                        <FontAwesomeIcon icon={faTumblr} style={iconStyles} />
+                    </a>
+                    <button type="button" id="new-quote" className="text-light fs-6 m-auto align-items-end btn" onClick={onClick} style={{backgroundColor: BgColor}}><span className='text'>New Quote</span></button>
+                </div>
+                <a className="credits text-light btn" href="https://github.com/Pankeking">by Pankeking</a>
             </div>
-            <div>
-                <a className="social-link" target="_blank" rel="noreferrer" href={twitterLink} style={{backgroundColor: BgColor}}>
-                    <FontAwesomeIcon icon={faTwitter} style={iconStyles} />
-                </a>
-                <a className="social-link" target="_blank" rel="noreferrer" href={tumblrLink} style={{backgroundColor: BgColor}}>
-                    <FontAwesomeIcon icon={faTumblr} style={iconStyles} />
-                </a>
-                <button id="new-quote" onClick={onClick} style={{backgroundColor: BgColor}}>New Quote</button>
-            </div>
-        
-        <p className="credits">by <a className="credits-link" href="https://github.com/Pankeking">Pankeking</a></p>
         </div>
     )
 }

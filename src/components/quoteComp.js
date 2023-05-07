@@ -32,14 +32,16 @@ export function QuoteComp({ BgColor, quoteIndex, onClick }) {
                 <p id="author" className="author" >- {quotes[quoteIndex].author}</p>
             </div>
             <div>
-                <a target="_blank" href={twitterLink} style={{backgroundColor: BgColor}}>
+                <a className="social-link" target="_blank" href={twitterLink} style={{backgroundColor: BgColor}}>
                     <FontAwesomeIcon icon={faTwitter} style={iconStyles} />
                 </a>
-                <a target="_blank" href={tumblrLink} style={{backgroundColor: BgColor}}>
+                <a className="social-link" target="_blank" href={tumblrLink} style={{backgroundColor: BgColor}}>
                     <FontAwesomeIcon icon={faTumblr} style={iconStyles} />
                 </a>
                 <button id="new-quote" onClick={onClick} style={{backgroundColor: BgColor}}>New Quote</button>
             </div>
+        
+        <p className="credits">by <a className="credits-link" href="https://github.com/Pankeking">Pankeking</a></p>
         </div>
     )
 }

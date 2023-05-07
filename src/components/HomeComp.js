@@ -1,12 +1,11 @@
 import React from "react";
 import {Link} from 'react-router-dom';
-import QuoteComp from "./quoteComp";
 
 
 
 function HomeComp({ BgColor }) {
     return (
-        <div style={{height:"100vh", backgroundColor: BgColor}}>
+        <div style={{height:"100vh", transition: "0.7s ease-in-out" ,backgroundColor: BgColor}}>
         </div>
         
     )

@@ -1,5 +1,6 @@
 .quote {
     position: absolute;
+    transition: 0.7s ease-in-out;
     top: 50%;
     left: 50%;
     -moz-transform: translateX(-50%) translateY(-50%);
@@ -15,6 +16,7 @@
 .author {
     font-size: 1.3rem;
     font-family: Copperplate;
+    text-align: end;
 }
 
 a {
@@ -25,10 +27,12 @@ a {
     right: 20%;
     top: 0.4rem;
     border-radius: 5px;
+    transition: 0.7s ease-in-out;
 }
 
 button {
     border: none;
+    transition: 0.7s ease-in-out;
     color: white;
     font-size: 1rem;
     padding: 0.7rem;

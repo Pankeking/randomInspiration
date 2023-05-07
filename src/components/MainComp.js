@@ -4,7 +4,7 @@ import React, {useState} from "react";
 import HomeComp from "./HomeComp";
 import {quotes, QuoteComp} from "./quoteComp";
 
-import {Routes, Route, Link, Navigate, withRouter} from 'react-router-dom';
+// import {Routes, Route, Link, Navigate, withRouter} from 'react-router-dom';
 
 function MainComp() {
  

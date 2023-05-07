@@ -1,7 +1,7 @@
 import React from 'react';
 import "./quote.css";
 import { faTwitter, faTumblr } from "@fortawesome/free-brands-svg-icons";
-import { faQuoteRight, faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
+import { faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
@@ -9,10 +9,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export function QuoteComp({ BgColor, quoteIndex, onClick }) {
     
-    const anchorStyles = {
-       backgroundColor: BgColor
-        
-    }
     const iconStyles = {
         width:"1rem",
         height:"1rem",
@@ -32,10 +28,10 @@ export function QuoteComp({ BgColor, quoteIndex, onClick }) {
                 <p id="author" className="author" >- {quotes[quoteIndex].author}</p>
             </div>
             <div>
-                <a className="social-link" target="_blank" href={twitterLink} style={{backgroundColor: BgColor}}>
+                <a className="social-link" target="_blank" rel="noreferrer" href={twitterLink} style={{backgroundColor: BgColor}}>
                     <FontAwesomeIcon icon={faTwitter} style={iconStyles} />
                 </a>
-                <a className="social-link" target="_blank" href={tumblrLink} style={{backgroundColor: BgColor}}>
+                <a className="social-link" target="_blank" rel="noreferrer" href={tumblrLink} style={{backgroundColor: BgColor}}>
                     <FontAwesomeIcon icon={faTumblr} style={iconStyles} />
                 </a>
                 <button id="new-quote" onClick={onClick} style={{backgroundColor: BgColor}}>New Quote</button>

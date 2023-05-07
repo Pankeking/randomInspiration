@@ -17,8 +17,6 @@ function QuoteComp({ BgColor, onClick, quote }) {
     }
     const backgroundStyle = {backgroundColor: BgColor}
 
-    
-
     const currentQuote = quote.quote;
     const currentAuthor = quote.author;
     
@@ -32,7 +30,7 @@ function QuoteComp({ BgColor, onClick, quote }) {
                         <FontAwesomeIcon icon={faQuoteLeft} /> 
                         <span id="text" className='fw-bold h-auto lh-1'> {currentQuote} </span>            
                     </p>
-                    <p id="author" className="ps-2 fs-6 fst-italic text-end" >- {currentAuthor}</p>
+                    <p id="author" className="ps-2 fs-6 fst-italic notranslate text-end" >- {currentAuthor}</p>
                 </div>
                 <div className="m-auto d-flex">
                     <a className="social-link align-items-start ms-4 m-1 p-1 btn" target="_blank" rel="noreferrer" href={twitterLink} style={backgroundStyle}>

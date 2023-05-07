@@ -41,7 +41,7 @@ function QuoteComp({ BgColor, onClick, quote }) {
                     </a>
                     <button type="button" id="new-quote" className="text-light fs-6 m-auto align-items-end btn" onClick={onClick} style={backgroundStyle}><span className='text'>New Quote</span></button>
                 </div>
-                <a className="credits text-light btn" href="https://github.com/Pankeking">by Pankeking</a>
+                <a className="credits text-light btn" href="https://github.com/Pankeking/randomInspiration/tree/master">by Pankeking</a>
             </div>
         </div>
     )

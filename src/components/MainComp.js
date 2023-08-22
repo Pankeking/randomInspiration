@@ -35,8 +35,23 @@ const quotes = [
     {quote: "Believe you can and you're halfway there.", 
     author: "Theodore Roosevelt"},
 
+    {quote: "Look at usual things with unusual eyes.",
+    author: "Vico Magistetti"},
+
     {quote: "The only way to do great work is to love what you do.", 
     author: "Steve Jobs"},
+
+    {quote: "Follow your inner moonlight. Don't hide the madness.",
+    author: "Allen Ginsberg"},
+
+    {quote: "I dream my painting and I paint my dream.",
+    author: "Vincent van Gogh"},
+ 
+    {quote: "Today's accomplishments were yesterday's impossibilities.",
+    author: "Robert H. Schuller"},
+ 
+    {quote: "If you have everything under control, you're not moving fast enough.",
+    author: "Mario Andretti"},
 
     {quote: "Once we accept our limits, we go beyond them",
     author: "Albert Einstein"},

@@ -38,6 +38,18 @@ const quotes = [
     {quote: "The only way to do great work is to love what you do.", 
     author: "Steve Jobs"},
 
+    {quote: "Once we accept our limits, we go beyond them",
+    author: "Albert Einstein"},
+ 
+    {quote: "The details are not the details. They make the design.",
+    author: "Charles Eames"},
+ 
+    {quote: "Do the difficult things while they are easy and do the great things while they are small. A journey of a thousand miles must begin with a single step.",
+    author: "Lao Tzu"},
+
+    {quote: "To iterate is human, to recurse divine.",
+    author: "Peter Deutsch"},
+ 
     {quote: "Believe in yourself and all that you are. Know that there is something inside you that is greater than any obstacle.", 
     author: "Christian D. Larson"},
 

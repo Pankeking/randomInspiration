@@ -1,0 +1,53 @@
+.quote {
+    transition: 0.7s ease-in-out;
+    font-size: 1.75em;
+    width: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    border: 1px solid white;
+    background-color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.author {
+    font-family: Copperplate;
+}
+
+.social-link {
+    border: none;
+    color: white;
+    border-radius: 5px;
+    transition: 0.1s ease-in-out;
+}
+
+button {
+    border: none;
+    transition: 0.1s ease-in-out;
+    color: white;
+    font-size: 1.75em;
+    border-radius: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+button:hover, a:hover {
+    opacity: 70%;
+    filter: alpha(opacity=70);
+    cursor: pointer;
+    
+}
+
+.credits {
+    position: relative;
+    bottom: -5rem;
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+    color: inherit;
+    transition: 0.7s ease-in-out;
+}
+
+

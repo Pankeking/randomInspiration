@@ -3,7 +3,7 @@ import React, {useState} from "react";
 
 import HomeComp from "./HomeComp";
 import QuoteComp from "./quoteComp";
-import quotes from "./utils/quotes";
+import quotes from "./utils/quotes.js";
 
 // import {Routes, Route, Link, Navigate, withRouter} from 'react-router-dom';
 

@@ -9,9 +9,7 @@ function AboutComp() {
             <p>This is the About Component</p>
             <p style={{height: "100vh", width:"100vw",fontSize:"42px", backgroundColor:"blue"}}> 
                 Here you can find the abouts
-
-
-         </p>
+            </p>
 
         </div>
     )

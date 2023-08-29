@@ -10,9 +10,3 @@ function HomeComp({ BgColor }) {
     )
 }
 export default HomeComp;
-
-
-
-  
-  
-  

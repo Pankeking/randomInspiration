@@ -2,6 +2,9 @@ const quotes = [
     {quote: "Believe you can and you're halfway there.", 
     author: "Theodore Roosevelt"},
 
+    {quote: "It always seems impossible until it's already done.", 
+    author: "Nelson Mandela"},
+
     {quote: "Never go to bed mad. Stay up and fight.",
     author: "Phyllis Diller"},
 

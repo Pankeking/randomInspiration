@@ -5,6 +5,9 @@ const quotes = [
     {quote: "It always seems impossible until it's already done.", 
     author: "Nelson Mandela"},
 
+    {quote: "A change in perspective is worth 80 IQ points.", 
+    author: "Alan Kay"},
+
     {quote: "Never go to bed mad. Stay up and fight.",
     author: "Phyllis Diller"},
 
